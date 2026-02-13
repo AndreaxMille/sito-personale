@@ -1,0 +1,29 @@
+package servertcp_lezione;
+
+import java.io.*;
+import java.net.*;
+
+public class serverTCP {
+    private ServerSocket socketServer=null;
+    private Socket socketClient=null;
+    private String stringaRicevuta;
+    private String stringaDaInviare;
+    private BufferedReder inDalClient;
+    private DataOutputStream outVersoClient;
+    private int portaAscolto;
+
+}
+public serverTCP(int portaAscolto) {
+    this.portaAscolto = portaAscolto;
+}
+
+public void atttendi(){
+    System.out.println("1- Server partito in esecuzione");
+    try{
+        socketServer=new ServerSocket
+
+
+    }catch(IOException ex){
+        System..out.println("Errore durante l'istanza del server. "+ex.getMessage());
+    }
+}
